@@ -1,5 +1,7 @@
 ﻿"""Модуль математических операций для учебного проекта."""
 
+__all__ = ["is_even", "safe_divide"]
+
 
 def is_even(number: int) -> bool:
     """Возвращает True, если число чётное."""
@@ -11,3 +13,4 @@ def safe_divide(a: float, b: float) -> float:
     if b == 0:
         raise ValueError("Деление на ноль невозможно")
     return a / b
+
